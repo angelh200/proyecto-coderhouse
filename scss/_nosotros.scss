@@ -1,0 +1,27 @@
+.nosotros {
+    margin: 50px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.nosotros__img{
+    width: 50%;
+    height: auto;
+}
+
+.nosotros__texto {
+    width: 100%;
+    text-align: center;
+}
+
+.nosotros__parrafo{
+    text-align: justify;
+    margin: 10px 80px;
+}
+
+.nosotros__titulo {
+    font-weight: 700;
+    color: #F26157;
+    margin: 20px 0;
+}

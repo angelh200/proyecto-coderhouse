@@ -1,0 +1,90 @@
+.busqueda__input {
+    color: #582630;
+    border: #582630 solid 2px;
+    border-radius: 5px 0 0 5px;
+}
+
+.busqueda__input:focus {
+    outline: none;
+    border: #F26157 solid 2px;
+}
+
+.busqueda__btn {
+    color: #582630;
+    border: #582630 solid 2px;
+    border-radius: 0 5px 5px 0;
+    background: none;
+    transition: all 0.25s ease;
+    box-shadow: 0px 3px 10px -4px rgba(0,0,0,0.75);
+}
+
+.busqueda__btn:hover {
+    color: #F26157;
+    border: #F26157 solid 2px;
+}
+
+.icono {
+    transition: all 0.2s ease;
+    cursor: pointer;
+    color: #582630;
+}
+
+.icono:hover {
+    color: #F26157;
+}
+
+.separador {
+    border-top: 0.5px rgba(0, 0, 0, 0.1) solid;
+}
+
+.menu {
+    position: sticky;
+    top: 0;
+    padding: 15px 0;
+    z-index: 99;
+    background-color: #fff;
+    box-shadow: 0px 3px 10px -4px rgba(0,0,0,0.75);
+}
+
+.menu__lista{
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+.menu__item {
+    margin: 0 15px;
+}
+
+@media only screen and (max-width: 500px) {
+    .menu__lista {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menu__item {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.menu__link {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 700;
+    color: #582630;
+    transition: all 0.5s ease;
+}
+
+.menu__link--active {
+    color: #F26157;
+}
+
+.menu__link:hover {
+    color: #F26157;
+}
+
