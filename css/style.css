@@ -19,7 +19,18 @@ a {
   text-decoration: none; }
 
 .titulo {
-  margin: 50px 0; }
+  margin: 50px 0;
+  position: relative; }
+
+.titulo::before {
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 50px;
+  left: 50%;
+  bottom: 0;
+  margin-left: -25px;
+  background-color: #F26157; }
 
 .busqueda__input {
   color: #582630;
@@ -35,8 +46,7 @@ a {
   border: #582630 solid 2px;
   border-radius: 0 5px 5px 0;
   background: none;
-  transition: all 0.25s ease;
-  box-shadow: 0px 3px 10px -4px rgba(0, 0, 0, 0.75); }
+  transition: all 0.25s ease; }
 
 .busqueda__btn:hover {
   color: #F26157;
@@ -121,7 +131,8 @@ a {
   display: inline-block;
   width: 100%;
   bottom: none;
-  list-style: none; }
+  list-style: none;
+  padding-left: 0; }
 
 .categorias__item {
   display: inline-block; }
@@ -189,13 +200,14 @@ a {
 
 .nosotros {
   margin: 50px 0;
-  display: flex;
   flex-wrap: wrap;
   justify-content: space-around; }
 
 .nosotros__img {
   width: 50%;
-  height: auto; }
+  height: auto;
+  display: block;
+  margin: 0 auto; }
 
 .nosotros__texto {
   width: 100%;
@@ -211,8 +223,12 @@ a {
   color: #F26157;
   margin: 20px 0; }
 
+.info {
+  width: 50%;
+  margin: 0 auto; }
+
 .formulario {
-  margin: 100px 0;
+  margin: 20px 0 100px 0;
   display: flex;
   justify-content: center; }
 

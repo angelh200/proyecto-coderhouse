@@ -1,13 +1,16 @@
+
 .nosotros {
     margin: 50px 0;
-    display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
 
+
 .nosotros__img{
     width: 50%;
     height: auto;
+    display: block;
+    margin: 0 auto;
 }
 
 .nosotros__texto {

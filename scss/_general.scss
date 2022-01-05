@@ -26,4 +26,16 @@ a {
 
 .titulo {
     margin: 50px 0;
+    position: relative;
+}
+
+.titulo::before {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 50px;
+    left: 50%;
+    bottom: 0;
+    margin-left: -25px;
+    background-color: #F26157;
 }
